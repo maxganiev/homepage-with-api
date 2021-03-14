@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  min-width: 100%;
+  max-width: fit-content;
+  min-height: 100vh;
+  max-height: fit-content;
+  background-color: #000;
+  font-family: "Inconsolata", monospace;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1rem;
+}
+
+nav progress {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 0.5rem;
+  z-index: 20000;
+}
+
+progress::-webkit-progress-bar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100vw;
+}
+progress {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+progress {
+  transform: rotate(180deg);
+}
+
+progress::-webkit-progress-value {
+  background-color: #fcba03 !important;
+}
+progress::-moz-progress-bar {
+  background-color: #fcba03 !important;
+}
+progress {
+  color: #fcba03;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 100vh;
+  max-height: fit-content;
+  z-index: 1;
+}
+
+section {
+  text-align: center;
+}
+
+.iframe-content {
+  width: 100%;
+  min-height: 180vh;
+  max-height: fit-content;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+.iframe-content::after {
+  content: "";
+  width: 100%;
+  height: 180vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+iframe {
+  width: 100%;
+  min-height: 180vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section .upper-block {
+  display: flex;
+  align-items: center;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  color: #fff;
+  min-width: 30%;
+  max-width: 30%;
+  margin-left: 3%;
+  margin-top: 2.2%;
+}
+
+section .upper-block .current-location {
+  flex: 1;
+}
+
+section .upper-block .weather-data {
+  flex: 3;
+}
+
+section .upper-block .currency-data {
+  flex: 1;
+}
+
+section .middle-block {
+  min-width: 50%;
+  max-width: 80vw;
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 2.4rem;
+  color: #fff;
+}
+
+section .middle-block .date-and-time {
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+section .middle-block .date-and-time .para-date-time {
+  position: absolute;
+  top: 36%;
+  left: 40%;
+  text-align: center;
+  font-size: calc(0.6rem + 1vmin);
+}
+
+section .middle-block .gsc-control-cse.gsc-control-cse-en {
+  border-radius: 25px;
+}
+
+section .lower-block {
+  margin: 0 auto;
+  min-width: 20vw;
+  max-width: fit-content;
+  min-height: 40vh;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+section .lower-block i {
+  color: #fcba03;
+}
+
+#map {
+  width: calc(19em + 1vmin);
+  height: calc(19em + 1vmin);
+  margin-top: 2%;
+  border-radius: 25px;
+}
