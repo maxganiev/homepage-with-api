@@ -89,7 +89,7 @@ section {
   z-index: 1;
 }
 
-iframe {
+.iframe-content iframe {
   width: 100%;
   min-height: 180vh;
   position: absolute;
@@ -119,6 +119,10 @@ section .upper-block .weather-data {
 
 section .upper-block .currency-data {
   flex: 1;
+}
+
+section .middle-block .gcse-search {
+  z-index: 2000000;
 }
 
 section .middle-block {
