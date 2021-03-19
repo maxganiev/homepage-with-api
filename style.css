@@ -172,9 +172,15 @@ section .lower-block i {
   color: #fcba03;
 }
 
-#map {
+section .lower-block #icons a i:hover {
+  transform: scale(1.5);
+  color: red;
+  transition: all 0.6s ease-in-out;
+}
+
+section .lower-block #map {
   width: calc(19em + 1vmin);
   height: calc(19em + 1vmin);
-  margin-top: 2%;
+  margin-top: 3%;
   border-radius: 25px;
 }
