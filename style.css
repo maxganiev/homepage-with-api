@@ -63,6 +63,7 @@ section {
   justify-content: space-around;
   min-height: 100vh;
   max-height: fit-content;
+  height: var(--max-viewport-height);
   z-index: 1;
 }
 
@@ -79,6 +80,7 @@ section {
   left: 0;
   opacity: 1;
   z-index: -1;
+  display: flex;
 }
 
 .iframe-content::after {
