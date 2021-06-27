@@ -1,10 +1,11 @@
 :root {
-  --max-viewport-height: 180vh;
+  --max-viewport-height: 100vh;
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -61,9 +62,8 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  min-height: 100vh;
+  min-height: var(--max-viewport-height);
   max-height: fit-content;
-  height: var(--max-viewport-height);
   z-index: 1;
 }
 
@@ -99,8 +99,9 @@ section {
   width: 100%;
   min-height: var(--max-viewport-height);
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 0;
+  border: none;
 }
 
 section .upper-block {
@@ -112,7 +113,7 @@ section .upper-block {
   min-width: 40%;
   max-width: 60%;
   margin-left: 3%;
-  margin-top: 2.2%;
+  margin-top: 3.5%;
 }
 
 section .upper-block .current-location {
@@ -189,4 +190,29 @@ section .lower-block #map {
   height: calc(19em + 1vmin);
   margin-top: 3%;
   border-radius: 25px;
+}
+
+/* media queries */
+
+/*phones*/
+
+@media (min-width: 300px) and (max-width: 660px) {
+  html {
+    font-size: calc(0.4rem + 1vmin);
+  }
+
+  section .upper-block {
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
+
+  section .middle-block {
+    margin-top: 2%;
+    width: 100%;
+  }
+
+  section .lower-block #map  {
+    width: calc(10em + 1vmin);
+    height: calc(10em + 1vmin);
+  }
 }
