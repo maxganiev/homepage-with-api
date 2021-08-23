@@ -86,7 +86,8 @@ section {
 .iframe-content::after {
   content: "";
   width: 100%;
-  height: var(--max-viewport-height);
+   min-height: var(--max-viewport-height);
+  max-height:var(--max-viewport-height);
   position: absolute;
   top: 10%;
   left: 0;
@@ -95,14 +96,6 @@ section {
   z-index: 1;
 }
 
-.iframe-content iframe {
-  width: 100%;
-  min-height: var(--max-viewport-height);
-  position: absolute;
-  top: 3%;
-  left: 0;
-  border: none;
-}
 
 section .upper-block {
   display: flex;
