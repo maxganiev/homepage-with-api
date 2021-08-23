@@ -89,7 +89,7 @@ section {
    min-height: var(--max-viewport-height);
   max-height:var(--max-viewport-height);
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 0;
   background-color: #000;
   opacity: 0.2;
