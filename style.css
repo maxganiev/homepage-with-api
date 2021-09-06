@@ -73,10 +73,10 @@ section {
 
 .iframe-content {
   width: 100%;
-  min-height: var(--max-viewport-height);
+  min-height: 140%;
   max-height:var(--max-viewport-height);
   position: absolute;
-  top: 10%;
+  top: 0;
   left: 0;
   opacity: 1;
   z-index: -1;
@@ -86,10 +86,10 @@ section {
 .iframe-content::after {
   content: "";
   width: 100%;
-   min-height: var(--max-viewport-height);
+   min-height: 100%;
   max-height:var(--max-viewport-height);
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 0;
   background-color: #000;
   opacity: 0.2;
